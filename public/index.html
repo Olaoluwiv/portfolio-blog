@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Banner</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            height: 25vh; /* 30% of the viewport height */
+            padding: 20px 0;
+            position: relative;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #007bff, #ff5722, #00c853);
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+        .logo-container img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        .logo-container svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: rotate 10s linear infinite;
+        }
+        .logo-container text {
+            font-family: 'Arial', sans-serif;
+            font-size: 8px;
+            fill: #fff;
+            font-weight: bold;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .banner h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .banner p {
+            margin: 10px 0 20px;
+            font-size: 0.8em;
+        }
+        ul li{
+            font-size: 15px;
+            display: flex;
+            display: inline-block;
+        }
+        ul li:hover{
+            text-decoration: underline;
+        }
+        /*
+        .banner .btn {
+            background-color: #ff5722;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+            */
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="logo-container">
+            <img src="https://avatars.githubusercontent.com/u/132825905?v=4" alt="Olaoluwa Ayidina">
+            <svg viewBox="0 0 60 60">
+                <path id="curve" d="M15,30 a1,1 0 0,1 30,0" fill="transparent"/>
+                <text width="150">
+                    <textPath href="#curve" startOffset="50%">
+                        Betzycoded
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <h1>Olaoluwa Ayidina</h1>
+        <p>Full Stack Developer | ALX SE Student</p>
+        <!-----
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+    -->
+    </div>
+    <!-- Portfolio Section -->
+    <section id="hero" class="jumbotron text-center">
+        <div class="container"><h2> My Journey in Building a Portfolio Project</h2>
+    <p>Embarking on the journey of creating a portfolio project has been a transformative experience.
+         As a passionate student at ALX, I've navigated through numerous challenges and celebrated various
+          achievements. This blog post aims to capture the essence of my journey,  
+        reflecting on the struggles and successes encountered along the way.</p>
+        <h2>The Vision</h2>
+        <p>When I first envisioned my portfolio project, I aimed to create a comprehensive food delivery 
+            app that seamlessly connects customers, delivery personnel, and restaurants. While I knew my
+             practical work experience in web development might not have reached the necessary level, 
+             I was aware that this would be an ambitious yet exciting challenge.
+        </p>
+        <h2>The Learning Curve</h2>
+        <h5>Mastering Web Technologies</h5>
+        <p>The initial phase involved building a solid foundation in web technologies. HTML, CSS,
+            and JavaScript became my closest companions as I learned to create visually appealing
+             and interactive web pages. Understanding the nuances of each technology was critical,
+              and I spent countless hours experimenting with different layouts and functionalities.</p>
+  <section id="hero" class="jumbotron text-center">
+    <div class="container">
+               <h2>Diving into React</h2>
+               <p>Transitioning to React was a significant milestone. The component-based architecture 
+                and state management using hooks like useState and useEffect opened new doors for building
+                 dynamic user interfaces. Creating components like App.js and ensuring proper state management
+                  were both challenging and rewarding.
+            </p>
+            <h2>Backend Development with Node.js</h2>
+            <p>Integrating backend functionalities using Node.js was another critical step. Setting up
+                 a server, creating APIs, and managing data flow between the front-end and back-end were
+                  tasks that required a deep understanding of server-side programming. It was here that I 
+                  encountered my first major hurdle: ensuring seamless communication between the client and
+                   server.
+            </p>
+            <h2>Database Integration</h2>
+            <p>Choosing and integrating a database like MySQL was another learning curve. Designing the 
+                database schema, writing efficient queries, and ensuring data integrity were tasks that tested
+                 my problem-solving skills. Learning SQL was a significant part of this phase, and it greatly 
+                 enhanced my backend development capabilities.
+            </p>
+            <h2>The Struggles</h2>
+            <h3>Debugging and Troubleshooting</h3>
+            <p>Debugging was a constant companion throughout the project. From fixing minor CSS glitches to resolving complex logical errors in JavaScript, every bug was a learning opportunity. One of the most frustrating yet enlightening experiences was resolving module not found errors related to component imports in React. Each error message was a puzzle that needed solving, and it often took hours of research and trial-and-error to fix.
+            </p>
+            <h2> Managing State</h2>
+            <p>Managing state in a complex application was another significant challenge. Ensuring that the state was accurately maintained and updated across various components required a deep understanding of React's state management principles. Implementing techniques to place an order, receive it, and mark it as delivered involved intricate state transitions.</p>
+            <h2>Balancing Front-end and Back-end development </h2>
+            <p>Striking a balance between front-end and back-end development was a delicate act. While creating an intuitive user interface was essential, ensuring robust backend functionalities was equally important. This balance required meticulous planning and execution.
+            </p>
+            <h2>The Accomplishment</h2>
+            <h3>Successfully Implementing Features</h3>
+            <p>Despite the challenges, successfully implementing key features of the food delivery app was immensely satisfying. The ability to place orders, track deliveries, and manage user accounts were functionalities that brought the project to life.
+            </p>
+            <h2>Building a Complete Application</h2>
+            <p>Completing a full-stack application that integrates front-end, back-end, and database functionalities was a monumental achievement. This project not only showcased my technical skills but also demonstrated my ability to see a project through from conception to completion.
+            </p>
+            <h2>Gaining Confidence</h2>
+            <p>The journey of building this portfolio project has significantly boosted my confidence. I've learned to tackle complex problems, debug efficiently, and create a cohesive application. The skills and knowledge gained through this project have prepared me for future challenges in the tech industry.
+            </p>
+            <h2>Looking Ahead</h2>
+            <p>This portfolio project marks the beginning of my journey as a full-stack engineer. The trials and learnings have equipped me with a robust skill set and a resilient mindset. As I continue to explore the vast landscape of software development, I look forward to building more innovative projects and contributing to the tech community.
+            </p>
+            <h2>summary</h2>
+            <p>Our food delivery app seamlessly integrates user-centric design with robust backend functionalities using React and Firebase. This synergy ensures a secure and efficient ordering experience, complete with real-time updates and user authentication. Future plans include enhancing admin features, expanding payment options, and optimizing performance based on user feedback and analytics.
+
+                This project has been a journey of learning and growth, made possible by ALX Tech's support and resources. It underscores the value of perseverance and dedication in achieving project milestones. I hope this journey inspires others to embrace challenges and celebrate their achievements, no matter how small, as integral steps towards personal and professional growth.
+            </p>
+            <h2>Most Difficult Technical Challenge</h2>
+            <p>One of the most difficult technical challenges I faced during this project was configuring the Firebase authentication. The project required several environment variables such as API_KEY, AUTH_DOMAIN, PROJECT_ID, MESSAGING_SENDER_ID, and APP_ID. I spent a significant amount of time trying to get these settings working correctly. Unfortunately, this means that currently, users cannot register on the site or access their routes. However, I am committed to resolving this issue soon.</p>
+            <h2>What I've Learned</h2>
+            <h5>Technical Takeaways</h5>
+            <p>I have gained proficiency in integrating React with Firebase, which has taught me the importance of real-time updates and secure user authentication in modern web applications.</p>
+            <h5>What I Might Do Differently</h5>
+            <p>In future projects, I will prioritize the early configuration and testing of environment variables, such as API keys, to prevent last-minute issues and ensure smoother development.</p>
+            <h5>What I Learned About Myself as an Engineer </h5>
+            <p>Moving forward, I will place a stronger emphasis on creating user-friendly experiences and embracing new technologies to continually enhance the functionality and efficiency of my applications.</p>
+            <h5>The Beliefs I Held Prior to This project </h5>
+            <p>This project confirmed my belief in the value of hard work and dedication while also highlighting the complexities of backend configuration, leading me to appreciate the necessity of thorough testing and validation processes.</p>
+            <h2>About Me </h2>
+            <p>I am Olaoluwa Ayidina, a passionate full stack developer with a strong foundation in JavaScript and Python. I have a keen interest in building web applications that provide excellent user experiences and efficient backend solutions. You can explore more about my work and projects through the links below:</p>
+            <ul>
+                <li><a href="#">Githhub|</a></li>
+                <li><a href="#">project page|</a></li>
+                <li><a href="#">Landing Page|</a></li>
+                <li><a href="#">Linkedin|</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+            </p>
+
+        
+        </div>
+    </section>
+<div id="root"></div>
+  <script src="%PUBLIC_URL%/index.js"></script>
+</body>
+</html>
