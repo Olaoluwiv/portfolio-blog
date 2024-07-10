@@ -59,7 +59,7 @@ Creating an intuitive user interface while ensuring robust backend functionaliti
 - Enhance admin features for better management of the app.
 - Expand payment options for users.
 - Optimize app performance based on user feedback and analytics.
-- Resolve the Firebase authentication configuration issue to enable user registration and login.
+- Resolve the Firebase authentication configuration issue to enable user registration and login
 
 ## Installation
 
