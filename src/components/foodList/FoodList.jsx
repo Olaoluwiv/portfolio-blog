@@ -10,6 +10,7 @@ const FoodList = ({ foods, placeOrder }) => {
             {food.name} - ${food.price}
             <button onClick={() => placeOrder(food.name, food.price)}>Order</button>
           </li>
+      
         ))}
       </ul>
     </div>
