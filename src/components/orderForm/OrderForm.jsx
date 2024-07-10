@@ -40,5 +40,4 @@ const OrderForm = ({ placeOrder }) => {
     </form>
   );
 };
-
 export default OrderForm;
