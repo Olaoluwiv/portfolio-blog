@@ -44,5 +44,4 @@ const Register = ({ setAuthenticated }) => {
     </div>
   );
 };
-
 export default Register;
