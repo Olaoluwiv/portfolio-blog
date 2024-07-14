@@ -65,7 +65,7 @@ Creating an intuitive user interface while ensuring robust backend functionaliti
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository
    ```bash
-   git clone https://github.com/Olaoluwiv/Olicoded.github.io.git
+   git clone https://github.com/Olaoluwiv/portfolio-blog.github.io.git
 ## Learnings
